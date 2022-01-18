@@ -5,11 +5,7 @@ Készíts egy programot, amely [1;10] intervallumon generál 5 darab véletlen e
 
 import random
 
-lista = []
-for _ in range(5):
-    veletlen = random.randint(1,10)
-    lista.append(veletlen)
-
+lista = [random.randint(1,10) for i in range(5)]
 osszes = 0    
 for szam in lista:
     osszes += szam
